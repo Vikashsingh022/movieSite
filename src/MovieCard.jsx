@@ -23,7 +23,7 @@ const MovieCard = ({ obj }) => {
 
   return (
     <div
-      className="card w-full max-w-xs bg-white text-black dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 dark:text-white rounded-2xl shadow-2xl mx-3 my-6 overflow-hidden transform hover:scale-105 transition duration-300 border border-gray-300 dark:border-gray-700 hover:border-indigo-500 relative"
+      className="card w-full max-w-xs bg-[#FFE4B5] text-black dark:bg-gradient-to-b dark:from-gray-900 dark:to-gray-800 dark:text-white rounded-2xl shadow-2xl mx-3 my-6 overflow-hidden transform hover:scale-105 transition duration-300 border border-gray-300 dark:border-gray-700 hover:border-indigo-500 relative"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

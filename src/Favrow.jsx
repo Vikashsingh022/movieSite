@@ -27,14 +27,14 @@ const Favrow = ({obj}) => {
               </div>
             </div>
             <div>
-              <div className="font-bold">{obj.title}</div>
+              <div className="font-bold text-base md:text-xl">{obj.title}</div>
             </div>
           </div>
         </td>
-        <td>{obj.popularity}</td>
-        <td>{obj.vote_average}</td>
+        <td><span className="text-base md:text-xl">{obj.popularity}</span></td>
+        <td><span className="text-base md:text-xl">{obj.vote_average}</span></td>
         <th>
-          <button className="btn btn-outline btn-error text-2xl" onClick={()=>{handleClick(obj.id)}}>
+          <button className="btn btn-outline btn-error text-sm md:text-2xl px-2 py-1 md:px-4 md:py-2" onClick={()=>{handleClick(obj.id)}}>
             
             Remove from Favourite
           </button>

@@ -44,14 +44,14 @@ const Favourite = () => {
         <table className="table">
 
           <thead>
-            <tr className='text-4xl'>
+            <tr className='text-xl md:text-4xl'>
 
               <th>Movie Name</th>
               <th>Popularity </th>
               <th className='flex justify-start'>  <svg onClick={() => { sortTheRating("d") }} height="42px" width="42px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8L18 14H6L12 8Z"></path></svg>  Rating   <svg onClick={() => { sortTheRating("a") }} height="42px" width="42px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg> </th>
             </tr>
           </thead>
-          <tbody className='text-4xl'>
+          <tbody className='text-xl md:text-4xl'>
 
 
             {arr.map((obj) => <Favrow key={obj.id} obj={obj}></Favrow>)}
